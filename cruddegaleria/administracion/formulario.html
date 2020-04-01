@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Añadir Fotos </title>
+<link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+<form method="post" action="nuevaimagen.php">
+    <fieldset>
+    
+    <!-- Nombre del Autor -->
+    <legend>Formulario de Imagen</legend>
+    
+    <!-- Nombre del Autor -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="autor">Autor</label>  
+      <div class="col-md-4">
+      <input id="autor" name="autor" type="text" placeholder="" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Nombre de la Foto-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="nombre">Nombre de la Foto</label>  
+      <div class="col-md-4">
+      <input id="nombre" name="nombre" type="text" placeholder="" class="form-control input-md" required="required">
+        
+      </div>
+    </div>
+    
+    <!-- Boton del Archivo --> 
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="foto">Archivo</label>
+      <div class="col-md-4">
+        <input id="foto" name="foto" class="input-file" type="file" required='required'>
+      </div>
+    </div>
+    
+    <!-- Descripcion de la Foto -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="descripcion">Descripcion de la Foto</label>
+      <div class="col-md-4">                     
+        <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+      </div>
+    </div>
+    
+    <!-- Activado o Desactivado -->
+    <label for="sexo">Género</label>
+    <select name="tipo" required name="tipo" id="tipo">
+      <option value="activado">Activado</option>
+      <option value="desactivado">Desactivado</option>
+    </select>
+
+    <!--Botones de Añadir y Eliminar-->
+    <br></br><input type="submit" name="submit" value="A&ntilde;adir">
+    <input type="reset" name="delete" value="Eliminar">
+    <br/><br/><a href="../index.php">Inicio</a>
+    </fieldset>
+    </form>
+    </body>
+    </html>
